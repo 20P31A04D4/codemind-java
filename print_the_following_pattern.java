@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Patterns4
+class Patterns2
 {
   public static void main(String args[])
    {
@@ -8,9 +8,9 @@ class Patterns4
       r=sc.nextInt();
       for(int i=1;i<=r;i++)
        { 
-         for(int j=i;j<=r;j++)
+         for(int j=1;j<=r-i+1;j++)
           {
-            System.out.print((char)(65+r-i)+" ");
+            System.out.print(j);
           }
          System.out.println();
        }

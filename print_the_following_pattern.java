@@ -8,9 +8,9 @@ class Patterns2
       r=sc.nextInt();
       for(int i=1;i<=r;i++)
        { 
-         for(int j=1;j<=r;j++)
+         for(int j=r;j>=1;j--)
           {
-            System.out.print((char)(64+i)+" ");
+            System.out.print(j+" ");
           }
          System.out.println();
        }

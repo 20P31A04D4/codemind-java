@@ -4,20 +4,20 @@ class Sample
     public static void main(String args[])
     {
         Scanner sc=new Scanner(System.in);
-        int a,c=0;
-        a=sc.nextInt();
-        int b[]=new int[a];
-        for(int i=0;i<a;i++)
+        int n,x[],i;
+        n=sc.nextInt();
+        x=new int[n];
+        for(i=0;i<n;i++)
         {
-            b[i]=sc.nextInt();
+            x[i]=sc.nextInt();
         }
-        for(int j=0;j<a;j++)
+        for(i=n-1;i>=0;i--)
         {
-           if(b[j]%2!=0)
-           {
-               c=j;
-           }
+            if(x[i]%2!=0)
+            {
+                System.out.println(i);
+                break;
+            }
         }
-        System.out.print(c);
     }
 }
